@@ -6,7 +6,7 @@ assignees: ["ArtP0rsche", "imStydent"]
 body:
   - type: markdown
     attributes: 
-      value:
+      value: |
       Спасибо за предложение. Мы очень ценим (нет) вашу помощь.
   - type: checkboxes
     id: new-bug
