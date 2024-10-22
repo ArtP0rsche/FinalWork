@@ -1,0 +1,32 @@
+name: Предложение улучшений
+descrition: Оставьте предложение об улучшении здесь
+title: "[Предложение улучшений]"
+labels: ["предложение улучшений"]
+assignees: ["ArtP0rsche"], ["imStydent"]
+body:
+  - type: markdown
+    attributes: 
+      value:
+      Спасибо за предложение. Мы очень ценим (нет) вашу помощь.
+  - type: checkboxes
+    id: new-bug
+    attributes:
+      label: Существует ли уже предложение по данной теме?
+      description: Пожалуйста, проверьте, есть ли уже предложение, которое вы хотели бы внести.
+      options:
+      - label: Я проверил существующие отчеты о проблемах
+        required: true
+  - type: textarea
+    id: suggestion-description
+    attributes:
+      label: Описание улучшения
+      description: Расскажите, какое улучшение вы хотели бы видеть в нашей программу
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: Пожалуйста, прикрепите файл (который будет, к примеру, визуально описывать внешний вид добавляемой функции и(или) один из способов реализации)
+      description: Загрузите файл, перетащив его сюда после создания задачи или выберите его вручную.
+    validations:
+      required: false
