@@ -2,7 +2,7 @@ name: Предложение улучшений
 descrition: Оставьте предложение об улучшении здесь
 title: "[Предложение улучшений]"
 labels: ["предложение улучшений"]
-assignees: ["ArtP0rsche"], ["imStydent"]
+assignees: ["ArtP0rsche", "imStydent"]
 body:
   - type: markdown
     attributes: 
