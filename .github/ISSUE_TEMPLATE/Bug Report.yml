@@ -1,2 +1,79 @@
 name: Отчёт о дефекте
+description: Отправьте отчёт о дефекте здесь
+title: "[BUG]"
+labels: ["bug"]
+assignees: ["ArtP0rsche"]
 body:
+  - type: markdown
+    attributes:
+      value:
+        Спасибо, что нашли время заполнить этот отчёт о дефекте
+  - type: checkboxes
+    id: new-bug
+    attributes:
+      label: Существует ли уже отчёт по этой проблеме?
+      description: Пожалуйста, проверьте, есть лиуже отчёт о проблеме, которую вы обнаружили.
+      options:
+      - label: Я проверил существующие отчеты о проблемах
+        required: true
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Описание ошибки
+      description: Расскажите, какую ошибку вы обнаружили и как должно было быть
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Шаги для воспроизведения
+      description: Шаги для воспроизведения ошибки.
+      placeholder: Пожалуйста, укажите шаги в виде списка
+    validations:
+      required: true
+  - type: textarea
+    id: expected-result
+    attributes:
+      label: Ожидаемый результат
+      description: Ожидаемый результат работы программы.
+      placeholder: Пожалуйста, укажите шаги в виде списка
+    validations:
+      required: true
+  - type: textarea
+    id: actual-result
+    attributes:
+      label: Фактический результат 
+      description: Фактический результат работы программы.
+      placeholder: Пожалуйста, укажите шаги в виде списка
+    validations:
+      required: true
+  - type: dropdown
+    id: importance
+    attributes:
+      label: Серьезность
+      description: Укажите серьезность ошибки
+      options:
+       - Критическая
+       - Высокая
+       - Средняя
+       - Низкая
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Приоритет
+      description: Укажите приоритетность исправления ошибки
+      options:
+       - Высокий
+       - Средний
+       - Низкий
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: Пожалуйста, прикрепите файл
+      description: Загрузите файл, перетащив его сюда после создания задачи или выберите его вручную.
+    validations:
+      required: false
