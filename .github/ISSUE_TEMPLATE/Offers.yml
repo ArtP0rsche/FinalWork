@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes: 
       value: |
-      Спасибо за предложение. Мы очень ценим (нет) вашу помощь.
+        Спасибо за предложение. Мы очень ценим (нет) вашу помощь.
   - type: checkboxes
     id: new-bug
     attributes:
